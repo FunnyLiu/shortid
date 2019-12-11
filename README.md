@@ -1,3 +1,46 @@
+
+# 源码分析
+
+在[nanoid](https://github.com/ai/nanoid)的基础上，自己定义了一套随机的生成算法，生成了更短的不重复id
+
+## 文件结构
+
+``` bash
+/Users/liufang/openSource/FunnyLiu/shortid
+├── index.js
+├── lib
+|  ├── alphabet.js
+|  ├── build.js
+|  ├── generate.js
+|  ├── index.js
+|  ├── is-valid.js
+|  ├── random
+|  |  ├── random-byte-browser.js
+|  |  ├── random-byte.js
+|  |  └── random-from-seed.js
+|  └── util
+|     ├── cluster-worker-id-browser.js
+|     └── cluster-worker-id.js
+├── package.json
+└── yarn.lock
+
+directory: 5 file: 25
+
+ignored: directory (1)
+
+```
+
+## 外部模块依赖
+
+请在： http://npm.broofa.com?q=shortid 查看
+
+## 内部模块依赖
+
+![img](./inner.svg)
+  
+
+
+
 ## shortid  [![Build Status](http://img.shields.io/travis/dylang/shortid.svg)](https://travis-ci.org/dylang/shortid) [![shortid](http://img.shields.io/npm/dm/shortid.svg)](https://www.npmjs.org/package/shortid)
 
 > Amazingly short non-sequential url-friendly unique id generator.
